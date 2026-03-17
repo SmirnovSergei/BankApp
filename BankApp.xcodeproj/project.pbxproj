@@ -34,6 +34,11 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		05EFC6782F69E5320019CC2A /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 		05032B492F61BFB8008405A7 /* BankApp */ = {
 			isa = PBXGroup;
 			children = (
+				05EFC6782F69E5320019CC2A /* Model */,
 				05032B5C2F61F444008405A7 /* View */,
 				05032B562F61CDDD008405A7 /* Extensions */,
 				05032B502F61C3D1008405A7 /* Info.plist */,
@@ -95,6 +101,7 @@
 				05032B4D2F61BFBD008405A7 /* Fonts */,
 				05032B562F61CDDD008405A7 /* Extensions */,
 				05032B5C2F61F444008405A7 /* View */,
+				05EFC6782F69E5320019CC2A /* Model */,
 			);
 			name = BankApp;
 			packageProductDependencies = (

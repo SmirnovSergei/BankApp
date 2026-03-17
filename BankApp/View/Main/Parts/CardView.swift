@@ -11,26 +11,45 @@ struct CardView: Shape {
 		var path = Path()
 		let width = rect.size.width
 		let height = rect.size.height
-		path.move(to: CGPoint(x: width, y: 0.66522*height))
-		path.addCurve(to: CGPoint(x: 0.94737*width, y: 0.75217*height), control1: CGPoint(x: width, y: 0.71324*height), control2: CGPoint(x: 0.97644*width, y: 0.75217*height))
-		path.addLine(to: CGPoint(x: 0.7228*width, y: 0.75217*height))
-		path.addCurve(to: CGPoint(x: 0.72105*width, y: 0.75506*height), control1: CGPoint(x: 0.72183*width, y: 0.75217*height), control2: CGPoint(x: 0.72105*width, y: 0.75347*height))
-		path.addCurve(to: CGPoint(x: 0.72051*width, y: 0.75716*height), control1: CGPoint(x: 0.72105*width, y: 0.75585*height), control2: CGPoint(x: 0.72086*width, y: 0.75661*height))
-		path.addLine(to: CGPoint(x: 0.6891*width, y: 0.80644*height))
-		path.addLine(to: CGPoint(x: 0.5752*width, y: 0.97741*height))
-		path.addCurve(to: CGPoint(x: 0.53981*width, y: height), control1: CGPoint(x: 0.56551*width, y: 0.99194*height), control2: CGPoint(x: 0.55289*width, y: height))
-		path.addLine(to: CGPoint(x: 0.05263*width, y: height))
-		path.addCurve(to: CGPoint(x: 0, y: 0.91304*height), control1: CGPoint(x: 0.02356*width, y: height), control2: CGPoint(x: 0, y: 0.96107*height))
-		path.addLine(to: CGPoint(x: 0, y: 0.08696*height))
-		path.addCurve(to: CGPoint(x: 0.05263*width, y: 0), control1: CGPoint(x: 0, y: 0.03893*height), control2: CGPoint(x: 0.02356*width, y: 0))
-		path.addLine(to: CGPoint(x: 0.94737*width, y: 0))
-		path.addCurve(to: CGPoint(x: width, y: 0.08696*height), control1: CGPoint(x: 0.97644*width, y: 0), control2: CGPoint(x: width, y: 0.03893*height))
-		path.addLine(to: CGPoint(x: width, y: 0.66522*height))
+		path.move(to: CGPoint(x: 0.94737 * width, y: 0))
+		
+		path.addCurve(to: CGPoint(x: width, y: 0.08734 * height),
+					  control1: CGPoint(x: 0.97644 * width, y: 0),
+					  control2: CGPoint(x: width, y: 0.0391 * height))
+		
+		path.addLine(to: CGPoint(x: width, y: 0.72489 * height))
+		
+		path.addCurve(to: CGPoint(x: 0.94737 * width, y: 0.81223 * height),
+					  control1: CGPoint(x: width, y: 0.77313 * height),
+					  control2: CGPoint(x: 0.97644 * width, y: 0.81223 * height))
+		
+		path.addLine(to: CGPoint(x: 0.73096 * width, y: 0.81223 * height))
+		
+		path.addCurve(to: CGPoint(x: 0.68893 * width, y: 0.84699 * height),
+					  control1: CGPoint(x: 0.71444 * width, y: 0.81223 * height),
+					  control2: CGPoint(x: 0.69888 * width, y: 0.8251 * height))
+		
+		path.addLine(to: CGPoint(x: 0.63522 * width, y: 0.96524 * height))
+		
+		path.addCurve(to: CGPoint(x: 0.59319 * width, y: height),
+					  control1: CGPoint(x: 0.62527 * width, y: 0.98713 * height),
+					  control2: CGPoint(x: 0.60971 * width, y: height))
+		
+		path.addLine(to: CGPoint(x: 0.05263 * width, y: height))
+		
+		path.addCurve(to: CGPoint(x: 0, y: 0.91266 * height),
+					  control1: CGPoint(x: 0.02356 * width, y: height),
+					  control2: CGPoint(x: 0, y: 0.9609 * height))
+		
+		path.addLine(to: CGPoint(x: 0, y: 0.08734 * height))
+		
+		path.addCurve(to: CGPoint(x: 0.05263 * width, y: 0),
+					  control1: CGPoint(x: 0, y: 0.0391 * height),
+					  control2: CGPoint(x: 0.02356 * width, y: 0))
+		
+		path.addLine(to: CGPoint(x: 0.94737 * width, y: 0))
+		
 		path.closeSubpath()
 		return path
 	}
-}
-
-#Preview {
-	CardView()
 }
